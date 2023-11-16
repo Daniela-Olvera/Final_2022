@@ -26,15 +26,120 @@ A new  preventative vaccine (covid921) is under test in clinical trials. Given t
 
 ## Males
 
+$H_0$ The Covid 921 vaccine does not exhibit a significant difference in effectiveness between male populations.
+
+$H_A$ The Covid 921 vaccine does exhibit a significant difference in effectiveness between male populations.
+
+```{r}
+library(dplyr)
+Males = filter (FinalData, FinalData$sex == 'M')
+```
+
+### Methods
+
+Males is the categorical variable , Covid 921 vaccine administration is an explanatory variable.Covid 921 preventative effectiveness is a response variable.
+
+Therefore, we will use the cat_cat helper files.
+
+### Results 
+
+### Descriptive Results
+
+### Graphical Descriptive Results
+
+### Numerical Descriptive Results
+
+### Inferential Results
+
+### Discussion and Conclusion
+
 
 ## Females
 
+$H_0$ The Covid 921 vaccine does not exhibit a significant difference in effectiveness between female populations.
+
+$H_A$ The Covid 921 vaccine does exhibit a significant difference in effectiveness between female populations.
+
+```{r}
+library(dplyr)
+Females = filter (FinalData, FinalData$sex == 'F')
+```
+
+### Methods
+
+Females is the categorical variable , Covid 921 vaccine administration is an explanatory variable.Covid 921 preventative effectiveness is a response variable.
+
+Therefore, we will use the cat_cat helper files.
+
+### Results 
+
+### Descriptive Results
+
+### Graphical Descriptive Results
+
+### Numerical Descriptive Results
+
+### Inferential Results
+
+### Discussion and Conclusion
 
 ## LGBTQ
 
+$H_0$ The Covid 921 vaccine does not exhibit a significant difference in effectiveness between LGBTQ populations.
 
+$H_A$ The Covid 921 vaccine does exhibit a significant difference in effectiveness between LGBTQ populations.
+
+```{r}
+library(dplyr)
+LGBTQ = filter (FinalData, FinalData$LGBTQ == 'gay')
+```
+
+### Methods
+
+LGBTQ is the categorical variable , Covid 921 vaccine administration is an explanatory variable.Covid 921 preventative effectiveness is a response variable.
+
+Therefore, we will use the cat_cat helper files.
+
+### Results 
+
+### Descriptive Results
+
+### Graphical Descriptive Results
+
+### Numerical Descriptive Results
+
+### Inferential Results
+
+### Discussion and Conclusion
 
 ## Druggies
+
+$H_0$ The Covid 921 vaccine does not exhibit a significant difference in effectiveness between druggies populations.
+
+$H_A$ The Covid 921 vaccine does exhibit a significant difference in effectiveness between druggies populations.
+
+```{r}
+library(dplyr)
+Druggies = filter (FinalData, FinalData$DrugUser == 'Druggies')
+```
+
+### Methods
+
+Druggies is the categorical variable , Covid 921 vaccine administration is an explanatory variable.Covid 921 preventative effectiveness is a response variable.
+
+Therefore, we will use the cat_cat helper files.
+
+### Results 
+
+### Descriptive Results
+
+### Graphical Descriptive Results
+
+### Numerical Descriptive Results
+
+### Inferential Results
+
+### Discussion and Conclusion
 
 
 # Overall Results and Conclusions
