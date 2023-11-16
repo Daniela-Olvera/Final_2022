@@ -47,9 +47,29 @@ Therefore, we will use the cat_cat helper files.
 
 ### Graphical Descriptive Results
 
+```{r}
+barchartGC(~infected + treatment,data=Males)
+barchartGC(~infected + treatment,data=Males, type="percent")
+
+```
+
+According to the bar graph the males who got the placebo had a higher percentage catching covid 19.Opposed to the males who received the vaccine 921 which had a lower percentage of catching covid.Among the males who got covid ,the people who received the vaccine 921 had significant reduction in catching covid.Compared to the males who received the placebo, who had a higher percentage of catching covid.
+
 ### Numerical Descriptive Results
 
+```{r}
+table1 <- xtabs(~infected + treatment, data=Males)
+rowPerc(table1)
+colPerc(table1)
+```
+
 ### Inferential Results
+
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
 
 ### Discussion and Conclusion
 
@@ -76,6 +96,12 @@ Therefore, we will use the cat_cat helper files.
 ### Descriptive Results
 
 ### Graphical Descriptive Results
+
+```{r}
+barchartGC(~infected + treatment,data=Females)
+barchartGC(~infected + treatment,data=Females, type="percent")
+
+```
 
 ### Numerical Descriptive Results
 
@@ -106,6 +132,12 @@ Therefore, we will use the cat_cat helper files.
 
 ### Graphical Descriptive Results
 
+```{r}
+barchartGC(~infected + treatment,data=LGBTQ)
+barchartGC(~infected + treatment,data=LGBTQ, type="percent")
+
+```
+
 ### Numerical Descriptive Results
 
 ### Inferential Results
@@ -120,7 +152,7 @@ $H_A$ The Covid 921 vaccine does exhibit a significant difference in effectivene
 
 ```{r}
 library(dplyr)
-Druggies = filter (FinalData, FinalData$DrugUser == 'Druggies')
+Druggies = filter (FinalData, FinalData$DrugUser == 'yes')
 ```
 
 ### Methods
@@ -134,6 +166,11 @@ Therefore, we will use the cat_cat helper files.
 ### Descriptive Results
 
 ### Graphical Descriptive Results
+
+```{r}
+barchartGC(~infected + treatment ,data=Druggies)
+barchartGC(~infected + treatment,data=Druggies, type="percent")
+```
 
 ### Numerical Descriptive Results
 
