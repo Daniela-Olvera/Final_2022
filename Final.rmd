@@ -53,7 +53,7 @@ barchartGC(~infected + treatment,data=Males, type="percent")
 
 ```
 
-According to the bar graph the males who got the placebo had a higher percentage catching covid 19.Opposed to the males who received the vaccine 921 which had a lower percentage of catching covid.Among the males who got covid ,the people who received the vaccine 921 had significant reduction in catching covid.Compared to the males who received the placebo, who had a higher percentage of catching covid.
+According to the bar graph, the males who got the placebo had a higher percentage/chance of catching covid 19.Opposed to the males who received the vaccine 921 who had a lower percentage/chance of catching covid.Basically ,among the males who got covid ,the people who received the vaccine 921 had significant reduction in catching covid.Compared to the males who received the placebo, who had a significance increase in possibility of getting covid.In terms of people who never got it (OK),they have around similar percentages for both the placebo and vaccine.Vaccine is effective in preventing the male population from catching covid.
 
 ### Numerical Descriptive Results
 
@@ -62,6 +62,7 @@ table1 <- xtabs(~infected + treatment, data=Males)
 rowPerc(table1)
 colPerc(table1)
 ```
+This table shows us that those who got the 921 vaccine have a 30.43% chance of getting covid after taking vaccine.However, those who got the placebo/did not get the vaccine had a 69.57% chance of getting covid 19.This table shows those who got the vaccine had a lower chance of catching covid.From those who were never infected (OK),those who received the vaccine had a 49.52% chance of getting covid.Those who received the placebo had a 50.48% chance of getting covid.Those who got vaccine had lower chance of getting covid than those who got placebo.
 
 ### Inferential Results
 
@@ -71,8 +72,15 @@ chisqtestGC(table1)
 fisher.test(table1)
 ```
 
+Chi Squared Test - The P value 0.0000000000001098, which is less than 0.05 so we reject the null hypothesis, which is that the covid 921 vaccine is not effective in male population.I can conclude that the vaccine 921 is effective in male population.
+
+Fisher Test - The p-value is 0.00000000000004631, which is less than 0.05 so we reject the null hypothesis, which is that the covid 921 vaccine is not effective in male population.Vaccine 921 is highly effective.Odds ratio is 2.2:1.On the fisher test, the odds ratio shows that you are 2 times more likely to die of covid in Korea if you are male.
+
+
+
 ### Discussion and Conclusion
 
+Original Question, is covid 921 vaccine effective amongst male population?We did chiq-test, which gave us a p value less than 0.05.Therefore,we reject the null hypothesis.Vaccine 921 is effective in preventing covid amongst male population.Males are 2 times more likely to get covid when they take the placebo instead of vaccine 921.
 
 ## Females
 
@@ -105,7 +113,22 @@ barchartGC(~infected + treatment,data=Females, type="percent")
 
 ### Numerical Descriptive Results
 
+```{r}
+table2 <- xtabs(~infected + treatment, data=Females)
+rowPerc(table2)
+colPerc(table2)
+```
+
+
+
+
 ### Inferential Results
+
+```{r}
+chisq.test(table2)
+chisqtestGC(table2)
+fisher.test(table2)
+```
 
 ### Discussion and Conclusion
 
@@ -140,7 +163,19 @@ barchartGC(~infected + treatment,data=LGBTQ, type="percent")
 
 ### Numerical Descriptive Results
 
+```{r}
+table3 <- xtabs(~infected + treatment, data=LGBTQ)
+rowPerc(table3)
+colPerc(table3)
+```
+
 ### Inferential Results
+
+```{r}
+chisq.test(table3)
+chisqtestGC(table3)
+fisher.test(table3)
+```
 
 ### Discussion and Conclusion
 
@@ -174,7 +209,19 @@ barchartGC(~infected + treatment,data=Druggies, type="percent")
 
 ### Numerical Descriptive Results
 
+```{r}
+table4 <- xtabs(~infected + treatment, data=Druggies)
+rowPerc(table4)
+colPerc(table4)
+```
+
 ### Inferential Results
+
+```{r}
+chisq.test(table4)
+chisqtestGC(table4)
+fisher.test(table4)
+```
 
 ### Discussion and Conclusion
 
