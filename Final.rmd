@@ -111,6 +111,9 @@ barchartGC(~infected + treatment,data=Females, type="percent")
 
 ```
 
+
+
+
 ### Numerical Descriptive Results
 
 ```{r}
@@ -161,6 +164,8 @@ barchartGC(~infected + treatment,data=LGBTQ, type="percent")
 
 ```
 
+This bar graph demonstrates that the members of LGBTQ who were infected with COVID-19 and received a placebo had a lower risk of contracting the disease than those who were infected and received the vaccination. The likelihood of getting COVID-19 was considerably greater in women who received the vaccine. As opposed to those who received a placebo, who had a lower risk of contracting COVID-19. Regarding individuals who never became infected (OK), the percentages for the vaccination and placebo are almost the same. 
+
 ### Numerical Descriptive Results
 
 ```{r}
@@ -169,6 +174,8 @@ rowPerc(table3)
 colPerc(table3)
 ```
 
+This table indicates that after receiving the vaccination, those who were previously infected with COVID-19 had a 84.62% probability of getting infected again. The placebo group had a 15.38% probability of contracting COVID-19. Among people who never got covid 19 (OK), those who received the vaccine had a 49.98% risk of getting infected, whereas those who received a placebo had a 50.02% likelihood.
+
 ### Inferential Results
 
 ```{r}
@@ -176,6 +183,9 @@ chisq.test(table3)
 chisqtestGC(table3)
 fisher.test(table3)
 ```
+
+Since the p-value for the chi-squared test is 0.00000006668, which is less than 0.05, we may reject the null hypothesis. With a p-value of 0.0000000109 on the Fisher test, we reject the null hypothesis, therefore,The covid921 vaccine does not exhibit a significant difference in effectiveness between LGBTQ populations. The odds ratio, those who do receive the vaccination have a 0.18:1 times increased risk of contracting COVID-19.
+
 
 ### Discussion and Conclusion
 
@@ -207,6 +217,8 @@ barchartGC(~infected + treatment ,data=Druggies)
 barchartGC(~infected + treatment,data=Druggies, type="percent")
 ```
 
+In this graph, the Druggies who got the vaccine 921 had a higher chance of getting covid.Compared to those who got the placebo who had a lower chance of getting covid.Vaccine is not effective in Druggies.
+
 ### Numerical Descriptive Results
 
 ```{r}
@@ -214,6 +226,8 @@ table4 <- xtabs(~infected + treatment, data=Druggies)
 rowPerc(table4)
 colPerc(table4)
 ```
+
+In this table, The people who got the placebo had an 11.67% chance of getting covid.Compared to those who got the covid 921 vaccine who had a 88.33% chance of getting covid.Essentially, those who got the placebo had a much lower chance of getting covid than those who got the vaccine.Vaccine is not effective in Druggies.
 
 ### Inferential Results
 
@@ -223,7 +237,10 @@ chisqtestGC(table4)
 fisher.test(table4)
 ```
 
-### Discussion and Conclusion
+The P value is 0.00000000284,less than 0.05, so we would reject the null hypothesis that the vaccine is not effective amongst the Druggies population.The vaccine 921 is effective amongst the vaccine.
 
+The P value is 0.000000000232,less than 0.05, so we reject the null hypothesis that the vaccine is not effective amongst druggies.It is effectvie amongst druggies.0.12:1 times more likely to get covid when you have the vaccine.Not Effective.
+
+### Discussion and Conclusion
 
 # Overall Results and Conclusions
