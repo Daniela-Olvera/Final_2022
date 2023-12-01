@@ -74,13 +74,8 @@ fisher.test(table1)
 
 Chi Squared Test - The P value 0.0000000000001098, which is less than 0.05 so we reject the null hypothesis, which is that the covid 921 vaccine is not effective in male population.I can conclude that the vaccine 921 is effective in male population.
 
-Fisher Test - The p-value is 0.00000000000004631, which is less than 0.05 so we reject the null hypothesis, which is that the covid 921 vaccine is not effective in male population.Vaccine 921 is highly effective.Odds ratio is 2.2:1.On the fisher test, the odds ratio shows that you are 2 times more likely to die of covid in Korea if you are male.
+Fisher Test - The p-value is 0.00000000000004631, which is less than 0.05 so we reject the null hypothesis, which is that the covid 921 vaccine is not effective in male population.Vaccine 921 is highly effective.Odds ratio is 2.2:1.On the fisher test, the odds ratio shows that you are 2 times more likely to get covid if you took the placebo instead of vaccine in male population.
 
-
-
-### Discussion and Conclusion
-
-Original Question, is covid 921 vaccine effective amongst male population?We did chiq-test, which gave us a p value less than 0.05.Therefore,we reject the null hypothesis.Vaccine 921 is effective in preventing covid amongst male population.Males are 2 times more likely to get covid when they take the placebo instead of vaccine 921.
 
 ## Females
 
@@ -111,7 +106,7 @@ barchartGC(~infected + treatment,data=Females, type="percent")
 
 ```
 
-
+According to the bar graph, the females who got the placebo had a higher percentage/chance of catching covid 19.Opposed to the females who received the vaccine 921 who had a lower percentage/chance of catching covid.Basically ,among the females who got covid ,the people who received the vaccine 921 had significant reduction in catching covid.Compared to the females who received the placebo, who had a significance increase in possibility of getting covid.In terms of people who never got it (OK),they have around similar percentages for both the placebo and vaccine.Vaccine is effective in preventing the female population from catching covid.
 
 
 ### Numerical Descriptive Results
@@ -122,7 +117,7 @@ rowPerc(table2)
 colPerc(table2)
 ```
 
-
+This table shows us that those who got the 921 vaccine have a 40% chance of getting covid after taking vaccine.However, those who got the placebo/did not get the vaccine had a 60% chance of getting covid 19.This table shows those who got the vaccine had a lower chance of catching covid.From those who were never infected (OK),those who received the vaccine had a 49.88% chance of getting covid.Those who received the placebo had a 50.12% chance of getting covid.Those who got vaccine had lower chance of getting covid than those who got placebo.Vaccine is effective in females.
 
 
 ### Inferential Results
@@ -133,7 +128,9 @@ chisqtestGC(table2)
 fisher.test(table2)
 ```
 
-### Discussion and Conclusion
+
+Since the p-value for the chi-squared test is 0.0002732, which is less than 0.05, we may reject the null hypothesis. With a p-value of 0.0002162 on the Fisher test, we reject the null hypothesis, therefore, the covid921 vaccine does exhibit a significant difference in effectiveness between female population. According to the odds ratio, females who do not receive the vaccination have a 1.5 times increased risk of contracting COVID-19.
+
 
 ## LGBTQ
 
@@ -164,7 +161,7 @@ barchartGC(~infected + treatment,data=LGBTQ, type="percent")
 
 ```
 
-This bar graph demonstrates that the members of LGBTQ who were infected with COVID-19 and received a placebo had a lower risk of contracting the disease than those who were infected and received the vaccination. The likelihood of getting COVID-19 was considerably greater in women who received the vaccine. As opposed to those who received a placebo, who had a lower risk of contracting COVID-19. Regarding individuals who never became infected (OK), the percentages for the vaccination and placebo are almost the same. 
+This bar graph demonstrates that the members of LGBTQ who were infected with COVID-19 and received a placebo had a lower risk of contracting the disease than those who were infected and received the vaccination. The likelihood of getting COVID-19 was considerably greater in LGBTQ who received the vaccine. As opposed to those who received a placebo, who had a lower risk of contracting COVID-19.In terms of people who never got it (OK),they have around similar percentages for both the placebo and vaccine.
 
 ### Numerical Descriptive Results
 
@@ -186,8 +183,6 @@ fisher.test(table3)
 
 Since the p-value for the chi-squared test is 0.00000006668, which is less than 0.05, we may reject the null hypothesis. With a p-value of 0.0000000109 on the Fisher test, we reject the null hypothesis, therefore,The covid921 vaccine does not exhibit a significant difference in effectiveness between LGBTQ populations. The odds ratio, those who do receive the vaccination have a 0.18:1 times increased risk of contracting COVID-19.
 
-
-### Discussion and Conclusion
 
 ## Druggies
 
@@ -217,7 +212,7 @@ barchartGC(~infected + treatment ,data=Druggies)
 barchartGC(~infected + treatment,data=Druggies, type="percent")
 ```
 
-In this graph, the Druggies who got the vaccine 921 had a higher chance of getting covid.Compared to those who got the placebo who had a lower chance of getting covid.Vaccine is not effective in Druggies.
+In this graph, the Druggies who got the vaccine 921 had a higher chance of getting covid.Compared to those who got the placebo who had a lower chance of getting covid.Vaccine is not effective in Druggies.In terms of people who never got it (OK),they have around similar percentages for both the placebo and vaccine.
 
 ### Numerical Descriptive Results
 
@@ -227,7 +222,7 @@ rowPerc(table4)
 colPerc(table4)
 ```
 
-In this table, The people who got the placebo had an 11.67% chance of getting covid.Compared to those who got the covid 921 vaccine who had a 88.33% chance of getting covid.Essentially, those who got the placebo had a much lower chance of getting covid than those who got the vaccine.Vaccine is not effective in Druggies.
+In this table, The people who got the placebo had an 11.67% chance of getting covid.Compared to those who got the covid 921 vaccine who had a 88.33% chance of getting covid.Essentially, those who got the placebo had a much lower chance of getting covid than those who got the vaccine.Vaccine is not effective in Druggies.Among people who never got covid 19 (OK), those who received the vaccine had a 48.81% risk of getting infected, whereas those who received a placebo had a 51.19% likelihood.
 
 ### Inferential Results
 
@@ -239,8 +234,17 @@ fisher.test(table4)
 
 The P value is 0.00000000284,less than 0.05, so we would reject the null hypothesis that the vaccine is not effective amongst the Druggies population.The vaccine 921 is effective amongst the vaccine.
 
-The P value is 0.000000000232,less than 0.05, so we reject the null hypothesis that the vaccine is not effective amongst druggies.It is effectvie amongst druggies.0.12:1 times more likely to get covid when you have the vaccine.Not Effective.
-
-### Discussion and Conclusion
+The P value is 0.000000000232,less than 0.05, so we reject the null hypothesis that the vaccine is not effective amongst druggies.It is effective amongst druggies.0.12:1 times more likely to get covid when you have the vaccine.Not Effective.
 
 # Overall Results and Conclusions
+
+The original question was, is the covid 921 vaccine effective in the population subgroups by gender( males and females), drug use, and sexual orientation? In all of the population subgroups, we rejected the null hypothesis.
+
+Original Question, is covid 921 vaccine effective amongst male population?We did chiq-test, which gave us a p value less than 0.05.Therefore,we reject the null hypothesis.Vaccine 921 is effective in preventing covid amongst male population.Males are 2 times more likely to get covid when they take the placebo instead of vaccine 921.
+
+Original Question, is covid 921 vaccine effective amongst female population?We did chiq-test, which gave us a p value less than 0.05.Therefore,we reject the null hypothesis.Vaccine 921 is effective in preventing covid amongst female population.
+
+Original Question, is covid 921 vaccine effective amongst druggies population?We did chiq-test, which gave us a p value less than 0.05.Therefore,we reject the null hypothesis.Vaccine 921 is effective in preventing covid amongst druggies population.
+
+Original Question, is covid 921 vaccine effective amongst LQBTQ population?We did chiq-test, which gave us a p value less than 0.05.Therefore,we reject the null hypothesis.Vaccine 921 is effective in preventing covid amongst LGBTQ population.
+
