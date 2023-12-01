@@ -238,13 +238,14 @@ The P value is 0.000000000232,less than 0.05, so we reject the null hypothesis t
 
 # Overall Results and Conclusions
 
-The original question was, is the covid 921 vaccine effective in the population subgroups by gender( males and females), drug use, and sexual orientation? In all of the population subgroups, we rejected the null hypothesis.
+The Original Question was, is the covid 921 vaccine effective in the population subgroups by gender( males and females), drug use, and sexual orientation? In all of the population subgroups, we rejected the null hypothesis.
+The Original Question, is covid 921 vaccine effective amongst male population?We did chiq-test, which gave us a p value less than 0.05.Therefore,we reject the null hypothesis.Vaccine 921 is effective in preventing covid amongst male population.Males are 2 times more likely to get covid when they take the placebo instead of vaccine 921.
 
-Original Question, is covid 921 vaccine effective amongst male population?We did chiq-test, which gave us a p value less than 0.05.Therefore,we reject the null hypothesis.Vaccine 921 is effective in preventing covid amongst male population.Males are 2 times more likely to get covid when they take the placebo instead of vaccine 921.
+The Original Question, is covid 921 vaccine effective amongst female population?We did chiq-test, which gave us a p value less than 0.05.Therefore,we reject the null hypothesis.Vaccine 921 is effective in preventing covid amongst female population.
 
-Original Question, is covid 921 vaccine effective amongst female population?We did chiq-test, which gave us a p value less than 0.05.Therefore,we reject the null hypothesis.Vaccine 921 is effective in preventing covid amongst female population.
+The Original Question, is covid 921 vaccine effective amongst druggies population?We did chiq-test, which gave us a p value less than 0.05.Therefore,we reject the null hypothesis.Vaccine 921 is effective in preventing covid amongst druggies population.
 
-Original Question, is covid 921 vaccine effective amongst druggies population?We did chiq-test, which gave us a p value less than 0.05.Therefore,we reject the null hypothesis.Vaccine 921 is effective in preventing covid amongst druggies population.
+The Original Question, is covid 921 vaccine effective amongst LQBTQ population?We did chiq-test, which gave us a p value less than 0.05.Therefore,we reject the null hypothesis.Vaccine 921 is effective in preventing covid amongst LGBTQ population.
 
-Original Question, is covid 921 vaccine effective amongst LQBTQ population?We did chiq-test, which gave us a p value less than 0.05.Therefore,we reject the null hypothesis.Vaccine 921 is effective in preventing covid amongst LGBTQ population.
+Vaccine 921 is effective.
 
